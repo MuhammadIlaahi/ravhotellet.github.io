@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Glöm inte att andvända photoshoppa headern (800x100) -->
+<!-- Video: https://www.youtube.com/watch?v=PIKKxU4n1Do&list=PLNadygDF_9TGLc8MhPEoNKWKDuXLV0zsj&index=5 -->
+<!-- Gör flera sidor som heter <namn>.html -->
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Rävhotellet - Billigaste Hotellet!</title>
+        <link href="mall.css" rel="stylesheet" type="text/css" >
+
+    </head>
+
+    <body>
+        <header>
+            <img src="bilder/fox%20af.png" alt="Internet">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="boka.html">Boka</a></li>
+                <li><a href="hitta.html">Hitta</a></li>
+                <li class="selected"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section id="hoger"><h2>Kontakta oss nu! :D</h2>
+            <div class="container">
+                <p class="pclass">Hej, här kan du kontakta oss! Om du har frågor, reservationer eller något liknande är det bara att skriva här nedanför. Tack så mycket och ha en fortsatt trevlig dag!</p>
+                <p class="pclass">Telefon nummer: +4679619057</p>
+                <p class="pclass">Mejl: ravhotell@sverige.se</p>
+
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Förnamn</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="Förnamn" placeholder="Ditt namn..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Efternamn</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="Efternamn" placeholder="Ditt efternamn..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Meddelande</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Skriv ditt ärende.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>          
+            <footer>
+                <p></p>
+                <a href="https://twitter.com/scandicsverige">Twitter</a>  |  <a href="https://www.facebook.com/scandicsverige">Facebook</a>  |  <a href="https://www.instagram.com/scandicinternational">Instagram</a>  |  <a href="https://plus.google.com/102458330413058027958">Google+</a>
+            </footer>
+        </section>
+    </body>
+</html>

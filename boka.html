@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Glöm inte att andvända photoshoppa headern (800x100) -->
+<!-- Video: https://www.youtube.com/watch?v=PIKKxU4n1Do&list=PLNadygDF_9TGLc8MhPEoNKWKDuXLV0zsj&index=5 -->
+<!-- Gör flera sidor som heter <namn>.html -->
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Rävhotellet - Billigaste Hotellet!</title>
+        <link href="mall.css" rel="stylesheet" type="text/css" >
+
+    </head>
+
+    <body>
+        <header>
+            <img src="bilder/fox%20af.png" alt="Internet">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li class="selected"><a href="boka.html">Boka</a></li>
+                <li><a href="hitta.html">Hitta</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <img src="bilder/boka%20nu.png" alt="Pool Party ">
+
+        <p></p>
+        <div id="tabell">
+            <div id="tabellRad">
+                <section id="vanster"><h2>Boka rum nu! :D</h2>
+                    <div class="container">
+                        <p class="pclass">Boka rum här!</p>
+                        <form action="action_page.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="room">Vilken rum vill du boka?</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="room" name="rum">
+                                        <option value="room1">Room1</option>
+                                        <option value="room2">Room2</option>
+                                        <option value="room3">Room3</option>
+                                        <option value="room4">Room4</option>
+                                        <option value="room5">Room5</option>
+                                        <option value="room6">Room6</option>
+                                        <option value="room7">Room7</option>
+                                        <option value="room8">Room8</option>
+                                        <option value="room9">Room9</option>
+                                        <option value="room10">Room10</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fornamn">Förnamn</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="fornamn" name="Efternamn" placeholder="Ditt förnamn..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="efternamn">Efternamn</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="efternamn" name="Efternamn" placeholder="Ditt efternamn..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="ankomst">Tider</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="ankomst" name="firstname" placeholder="Ankomst...">
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="avresa" name="firstname" placeholder="Avresa...">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="subject">Kommentar</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section id="hoger"><h2>Boka lokal nu! :D</h2>
+                    <div class="container">
+                        <p class="pclass">Boka lokal här!</p>
+                        <form action="action_page.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="ruum">Vilken rum vill du boka?</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="ruum" name="rum">
+                                        <option value="lokal1">Lokal1</option>
+                                        <option value="lokal2">Lokal2</option>
+                                        <option value="lokal3">Lokal3</option>
+                                        <option value="lokal4">Lokal4</option>
+                                        <option value="lokal5">Lokal5</option>
+                                        <option value="lokal6">Lokal6</option>
+                                        <option value="lokal7">Lokal7</option>
+                                        <option value="lokal8">Lokal8</option>
+                                        <option value="lokal9">Lokal9</option>
+                                        <option value="lokal10">Lokal10</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="firstname">Förnamn</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="firstname" name="Fornamn" placeholder="Ditt förnamn..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="lastname">Efternamn</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="lastname" name="Efternamn" placeholder="Ditt efternamn..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="ankomstt">Tider</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="ankomstt" name="firstname" placeholder="Ankomst...">
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="avresaa" name="firstname" placeholder="Avresa...">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="subject">Kommentar</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <textarea id="subject1" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>         
+        </div> 
+        <footer>
+            <a href="https://twitter.com/scandicsverige">Twitter</a>  |  <a href="https://www.facebook.com/scandicsverige">Facebook</a>  |  <a href="https://www.instagram.com/scandicinternational">Instagram</a>  |  <a href="https://plus.google.com/102458330413058027958">Google+</a>
+        </footer>
+
+    </body>
+
+</html>
