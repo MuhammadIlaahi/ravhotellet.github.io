@@ -1,174 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <meta charset="utf-8">
         <title>Rävhotellet - Billigaste Hotellet!</title>
-        <link href="mall.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
-    <body>
-        <header>
-            <img src="bilder/fox%20af.png" alt="Internet" class="sidan">
+    <body class="body">
+
+        <header class="mainHeader">
+            <img src="img/fox%20640x360.png">
+            <nav><ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Boka</a></li>
+                <li><a href="#">Hitta</a></li>
+                <li><a href="#">Kontakt</a></li>
+                </ul></nav>
         </header>
-        <nav>
-            <ul>
-                <li class="selected"><a href="index.html">Start</a></li>
-                <li><a href="boka.html">Boka</a></li>
-                <li><a href="hitta.html">Hitta</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
 
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="mainContent">
+            <div class="content">	
+                <article class="topcontent">	
+                    <header>
+                        <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Välkommen!</a></h2>
+                    </header>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="bilder/img1.png" alt="Bild 1">
-                <div class="text"></div>
+                    <footer>
+                        <p class="post-info">Detta är vår webbplats! Ha en fortsatt trevlig dag!</p>
+                    </footer>
+
+                    <content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    </content>
+
+                </article>
+
+                <article class="bottomcontent">	
+                    <header>
+                        <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">First post</a></h2>
+                    </header>
+
+                    <footer>
+                        <p class="post-info">This was posted on the 5th of March 2013 by Christian Vasile</p>
+                    </footer>
+
+                    <content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </content>
+
+                </article>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="bilder/img2.png" alt="Bild 2">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="bilder/img3.png" alt="Bild 3">
-                <div class="text"></div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1} 
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none"; 
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block"; 
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
-
-        <div id="tabell">
-            <div id="tabellRad">
-                <section id="vanster">
-                    <img src="bilder/welcome.png" alt="Welcome" class="css">
-                    <h2>Välkommen!</h2>
-                    <p>
-                        BW Malmö Arena Hotel är ett event- och affärshotell med 295 rum. Vår skybar erbjuder en unik utsikt över Öresund och Malmö.
-
-                        BW Malmö Arena Hotel är ett modernt event- och affärshotell på bästa läge i Malmö Hyllie som erbjuder rum till rimliga priser. 
-                        Vi serverar moderna skånska smaker i Nilssons Restaurang & Bar.
-                        Skybaren SKAJ finns på våning 16, där serveras enklare rätter till en unik utsikt över Malmö och Öresundsbron. 
-
-                        Hotellet ligger i direkt anknytning till Malmö Arena vilket gör att BW Malmö Arena Hotel kan arrangera konferenser för allt mellan 2-14 000 personer. 
-
-                        BW Malmö Arena Hotel är beläget mellan Malmö Arena och Malmömässan, den största mässanläggningen i Malmö. 
-                        Anläggningen finns på gångavstånd till shoppingcentret Emporia och Malmö Hyllie Station. 
-                    </p>
-
-                    <p>
-                        Närheten till Copenhagen Airport gör att vi även är ett flygplatshotell. Ni kan med tåg ta er de 12 minuterna till Copenhagen Airport.
-                        Det tar 3 minuter till centrala Malmö och 25 minuter till Köpenhamns Central. 
-                        Varmt Välkommen till BW Malmö Arena Hotel! 
-                        Boka hotellrum på reservation@malmoarenahotel.com eller ring 040-642 04 00!
-                        Boka konferens på meeting@malmoarenahotel.com eller ring 040-642 04 00!
-                    </p>
-
-                    <p>
-                        Närheten till Copenhagen Airport gör att vi även är ett flygplatshotell. Ni kan med tåg ta er de 12 minuterna till Copenhagen Airport.
-                        Det tar 3 minuter till centrala Malmö och 25 minuter till Köpenhamns Central. 
-                        Varmt Välkommen till BW Malmö Arena Hotel! 
-                        Boka hotellrum på reservation@malmoarenahotel.com eller ring 040-642 04 00!
-                        Boka konferens på meeting@malmoarenahotel.com eller ring 040-642 04 00!
-                    </p>
-
-                    <p>
-                        BW Malmö Arena Hotel är ett event- och affärshotell med 295 rum. Vår skybar erbjuder en unik utsikt över Öresund och Malmö.
-
-                        BW Malmö Arena Hotel är ett modernt event- och affärshotell på bästa läge i Malmö Hyllie som erbjuder rum till rimliga priser. 
-                        Vi serverar moderna skånska smaker i Nilssons Restaurang & Bar.
-                        Skybaren SKAJ finns på våning 16, där serveras enklare rätter till en unik utsikt över Malmö och Öresundsbron. 
-
-                        Hotellet ligger i direkt anknytning till Malmö Arena vilket gör att BW Malmö Arena Hotel kan arrangera konferenser för allt mellan 2-14 000 personer. 
-                    </p>
-
-                </section>
-                <section id="hoger">
+            <aside class="top-sidebar">
+                <article>
+                    <h2>Boka nu!</h2>
                     <div class="container">
                         <form action="action_page.php">
-                            <h2>Boka nu!</h2>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="fname">Förnamn</label>
+                                    <label for="fname">First Name</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="fname" name="Förnamn" placeholder="Ditt namn..">
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="lname">Efternamn</label>
+                                    <label for="lname">Last Name</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="lname" name="Efternamn" placeholder="Ditt efternamn..">
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="lname">Tider</label>
+                                    <label for="country">Room</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="ankomst" name="firstname" placeholder="Ankomst...">
-                                </div>
-                                <div class="col-75">
-                                    <input type="text" id="avresa" name="firstname" placeholder="Avresa...">
+                                    <select id="country" name="country">
+                                        <option value="australia">Room1</option>
+                                        <option value="canada">Room2</option>
+                                        <option value="usa">Room3</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-25">
-                                    <label for="subject">Kommentar</label>
+                                    <label for="subject">Subject</label>
                                 </div>
                                 <div class="col-75">
-                                    <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -176,14 +102,13 @@
                             </div>
                         </form>
                     </div>
+                </article>
+            </aside>
 
-                </section>
-            </div>         
-        </div>  
-        <footer>
-            <a href="https://twitter.com/scandicsverige">Twitter</a>  |  <a href="https://www.facebook.com/scandicsverige">Facebook</a>  |  <a href="https://www.instagram.com/scandicinternational">Instagram</a>  |  <a href="https://plus.google.com/102458330413058027958">Google+</a>
+        <footer class="mainFooter">
+            <p>Copyright &copy; 2013 <a href="http://1stwebdesigner.com">1stwebdesigner</a></p>
         </footer>
 
+        </div>
     </body>
-
 </html>
